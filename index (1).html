@@ -1,0 +1,38 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hyperlink Image Reveal</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .hidden-image {
+    display: none;
+    margin-top: 20px;
+    max-width: 400px;
+  }
+
+  a {
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+</style>
+</head>
+<body>
+
+<p>
+  This is a sample paragraph. If you want to see something special, 
+  <a onclick="document.getElementById('myImage').style.display='block'">click here</a>.
+  Enjoy the surprise!
+</p>
+
+<img id="myImage" class="hidden-image" src="girl.jpeg" alt="Surprise Image">
+
+</body>
+</html>
